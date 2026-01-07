@@ -1,14 +1,9 @@
-# src/visualization.py
 import matplotlib.pyplot as plt
 import seaborn as sns
-
+import streamlit as st  # needed to render plots in Streamlit
 
 def plot_risk_matrix(df_risk):
-    """
-    Plot a risk heatmap (Impact vs Likelihood).
-    """
-
-    plt.figure(figsize=(8, 6))
+    fig, ax = plt.subplots(figsize=(8, 6))
 
     sns.scatterplot(
         data=df_risk,
@@ -23,32 +18,31 @@ def plot_risk_matrix(df_risk):
             "Critical": "darkred"
         },
         sizes=(100, 1000),
-        legend="brief"
+        legend="brief",
+        ax=ax
     )
 
-    plt.title("Risk Matrix – Impact vs Likelihood")
-    plt.xlabel("Likelihood")
-    plt.ylabel("Impact")
-    plt.grid(True)
+    ax.set_title("Risk Matrix – Impact vs Likelihood")
+    ax.set_xlabel("Likelihood")
+    ax.set_ylabel("Impact")
+    ax.grid(True)
 
-    plt.tight_layout()
-    plt.show()
+    st.pyplot(fig)  # <-- render in Streamlit
+    plt.close(fig)  # clean up
 
 def plot_top_risks(df_risk, top_n=10):
-    """
-    Plot top N risks by risk score.
-    """
-
     top_risks = df_risk.head(top_n)
+    fig, ax = plt.subplots(figsize=(10, 5))
 
-    plt.figure(figsize=(10, 5))
-    plt.barh(
+    ax.barh(
         top_risks["Asset"] + " - " + top_risks["Threat"],
         top_risks["Risk"]
     )
 
-    plt.xlabel("Risk Score")
-    plt.title(f"Top {top_n} Cyber Risks")
-    plt.gca().invert_yaxis()
+    ax.set_xlabel("Risk Score")
+    ax.set_title(f"Top {top_n} Cyber Risks")
+    ax.invert_yaxis()
     plt.tight_layout()
-    plt.show()
+
+    st.pyplot(fig)  # <-- render in Streamlit
+    plt.close(fig)
