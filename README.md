@@ -6,9 +6,9 @@
 
 ## Project Overview
 
-In modern digital environments, organizations must understand the risks to their assets—ranging from IT systems to sensitive data—and implement effective controls to prevent breaches or operational disruptions. **RiskSight** automates this process by:
+In modern digital environments, organizations must understand the risks to their assets ranging from IT systems to sensitive data and implement effective controls to prevent breaches or operational disruptions. **RiskSight** automates this process by:
 
-1. Generating a **randomized list of assets** with **criticality scores** for Confidentiality, Integrity, Availability (CIA) and other security properties.
+1. Generating a **randomized list of assets** with **criticality scores** for Confidentiality, Integrity, Availability (CIA) and other security properties (organisations could use their own list of assets).
 2. **Automatically linking assets to threats** using the **STRIDE framework**.
 3. Retrieving **feasibility scores** for each threat from a **CAPEC-based database**.
 4. Calculating **risk scores** by combining asset criticality and threat feasibility.
@@ -60,7 +60,6 @@ RiskSight is suitable for organizations and teams looking to:
 
 ## Acknowledgements
 
-- Inspired by model-based security risk management principles from [MathWorks](https://www.mathworks.com/campaigns/offers/next/model-based-security-risk-analysis.html)
 - STRIDE threat modeling framework
 - CAPEC threat catalog
 - ISO/IEC security standards
