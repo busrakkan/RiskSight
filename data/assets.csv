@@ -1,9 +1,9 @@
-Asset,Confidentiality,Integrity,Availability
-Citizen Database,5,5,4
-ERP System,4,4,5
-Internal Network,4,4,5
-Online Payment Portal,5,4,5
-E-Health Records,5,5,4
-IoT Production Sensors,3,4,4
-Document Management System,4,4,4
-Digital Service Portal,4,3,5
+Asset,Confidentiality,Integrity,Availability,Exposure
+Citizen Database,5,5,4,3
+ERP System,4,4,5,2
+Internal Network,4,4,5,2
+Online Payment Portal,5,4,5,5
+E-Health Records,5,5,4,3
+IoT Production Sensors,3,4,4,4
+Document Management System,4,4,4,3
+Digital Service Portal,4,3,5,5
