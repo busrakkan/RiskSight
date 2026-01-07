@@ -1,0 +1,7 @@
+Threat,Feasibility,Description
+Spoofing,3,Impersonating a user or system
+Tampering,4,Modifying data or system components
+Repudiation,2,Ability to deny actions without trace
+Information Disclosure,5,Unauthorized access to sensitive data
+Denial of Service,3,Preventing legitimate use of a system
+Elevation of Privilege,4,Gaining higher access than permitted
