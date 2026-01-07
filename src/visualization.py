@@ -33,3 +33,22 @@ def plot_risk_matrix(df_risk):
 
     plt.tight_layout()
     plt.show()
+
+def plot_top_risks(df_risk, top_n=10):
+    """
+    Plot top N risks by risk score.
+    """
+
+    top_risks = df_risk.head(top_n)
+
+    plt.figure(figsize=(10, 5))
+    plt.barh(
+        top_risks["Asset"] + " - " + top_risks["Threat"],
+        top_risks["Risk"]
+    )
+
+    plt.xlabel("Risk Score")
+    plt.title(f"Top {top_n} Cyber Risks")
+    plt.gca().invert_yaxis()
+    plt.tight_layout()
+    plt.show()

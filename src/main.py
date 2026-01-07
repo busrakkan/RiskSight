@@ -6,6 +6,8 @@ from risk_calculator import calculate_risk
 from controls import suggest_controls
 from visualization import plot_risk_matrix
 from risk_register import generate_risk_register
+from visualization import plot_risk_matrix, plot_top_risks
+
 
 # -------------------------
 # Step 1: Load assets
@@ -46,6 +48,8 @@ print(df_controls_suggested)
 # Step 6: Visualize Risk Matrix
 # -------------------------
 plot_risk_matrix(df_risk)
+plot_top_risks(df_risk)
+
 
 # -------------------------
 # Step 7: Generate Risk Register
