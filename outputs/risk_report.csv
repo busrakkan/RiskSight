@@ -1,0 +1,20 @@
+Asset,Threat,Impact,Feasibility,Risk
+Customer Database,Tampering,11,4,44
+Customer Database,Repudiation,11,2,22
+Customer Database,Information Disclosure,11,5,55
+ERP System,Tampering,8,4,32
+ERP System,Elevation of Privilege,8,4,32
+Internal Network,Information Disclosure,11,5,55
+Email Server,Information Disclosure,11,5,55
+Email Server,Elevation of Privilege,11,4,44
+Email Server,Denial of Service,11,3,33
+HR Records,Elevation of Privilege,8,4,32
+HR Records,Information Disclosure,8,5,40
+HR Records,Spoofing,8,3,24
+Payment Gateway,Information Disclosure,11,5,55
+Payment Gateway,Elevation of Privilege,11,4,44
+IoT Sensor Network,Repudiation,7,2,14
+IoT Sensor Network,Elevation of Privilege,7,4,28
+Document Management System,Information Disclosure,11,5,55
+Document Management System,Tampering,11,4,44
+Document Management System,Spoofing,11,3,33

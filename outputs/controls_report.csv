@@ -1,0 +1,20 @@
+Asset,Threat,Risk,ISO_Control,Description
+Customer Database,Tampering,44,ISO 27001 A.12.1,Change management
+Customer Database,Repudiation,22,ISO 27001 A.10,Logging
+Customer Database,Information Disclosure,55,ISO 27001 A.13,Data encryption
+ERP System,Tampering,32,ISO 27001 A.12.1,Change management
+ERP System,Elevation of Privilege,32,ISO 27001 A.9.4,Privilege management
+Internal Network,Information Disclosure,55,ISO 27001 A.13,Data encryption
+Email Server,Information Disclosure,55,ISO 27001 A.13,Data encryption
+Email Server,Elevation of Privilege,44,ISO 27001 A.9.4,Privilege management
+Email Server,Denial of Service,33,ISO 27001 A.14,DoS mitigation
+HR Records,Elevation of Privilege,32,ISO 27001 A.9.4,Privilege management
+HR Records,Information Disclosure,40,ISO 27001 A.13,Data encryption
+HR Records,Spoofing,24,ISO 27001 A.9,Access control
+Payment Gateway,Information Disclosure,55,ISO 27001 A.13,Data encryption
+Payment Gateway,Elevation of Privilege,44,ISO 27001 A.9.4,Privilege management
+IoT Sensor Network,Repudiation,14,ISO 27001 A.10,Logging
+IoT Sensor Network,Elevation of Privilege,28,ISO 27001 A.9.4,Privilege management
+Document Management System,Information Disclosure,55,ISO 27001 A.13,Data encryption
+Document Management System,Tampering,44,ISO 27001 A.12.1,Change management
+Document Management System,Spoofing,33,ISO 27001 A.9,Access control
