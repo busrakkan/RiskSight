@@ -1,20 +1,19 @@
 Asset,Threat,Risk,ISO_Control,Description
-Customer Database,Tampering,44,ISO 27001 A.12.1,Change management
-Customer Database,Repudiation,22,ISO 27001 A.10,Logging
-Customer Database,Information Disclosure,55,ISO 27001 A.13,Data encryption
-ERP System,Tampering,32,ISO 27001 A.12.1,Change management
-ERP System,Elevation of Privilege,32,ISO 27001 A.9.4,Privilege management
-Internal Network,Information Disclosure,55,ISO 27001 A.13,Data encryption
-Email Server,Information Disclosure,55,ISO 27001 A.13,Data encryption
-Email Server,Elevation of Privilege,44,ISO 27001 A.9.4,Privilege management
-Email Server,Denial of Service,33,ISO 27001 A.14,DoS mitigation
-HR Records,Elevation of Privilege,32,ISO 27001 A.9.4,Privilege management
-HR Records,Information Disclosure,40,ISO 27001 A.13,Data encryption
-HR Records,Spoofing,24,ISO 27001 A.9,Access control
-Payment Gateway,Information Disclosure,55,ISO 27001 A.13,Data encryption
-Payment Gateway,Elevation of Privilege,44,ISO 27001 A.9.4,Privilege management
-IoT Sensor Network,Repudiation,14,ISO 27001 A.10,Logging
-IoT Sensor Network,Elevation of Privilege,28,ISO 27001 A.9.4,Privilege management
-Document Management System,Information Disclosure,55,ISO 27001 A.13,Data encryption
-Document Management System,Tampering,44,ISO 27001 A.12.1,Change management
-Document Management System,Spoofing,33,ISO 27001 A.9,Access control
+Citizen Database,Spoofing,42,ISO 27001 A.9,Strong authentication & access control
+Citizen Database,Elevation of Privilege,56,ISO 27001 A.9.4,Least privilege & privilege management
+Citizen Database,Repudiation,28,ISO 27001 A.10,Logging and non-repudiation mechanisms
+ERP System,Tampering,52,ISO 27001 A.12.1,Implement change management and integrity checks
+ERP System,Elevation of Privilege,52,ISO 27001 A.9.4,Least privilege & privilege management
+ERP System,Denial of Service,39,ISO 27001 A.14,Availability controls & monitoring
+Internal Network,Denial of Service,39,ISO 27001 A.14,Availability controls & monitoring
+Internal Network,Spoofing,39,ISO 27001 A.9,Strong authentication & access control
+Online Payment Portal,Tampering,56,ISO 27001 A.12.1,Implement change management and integrity checks
+Online Payment Portal,Elevation of Privilege,56,ISO 27001 A.9.4,Least privilege & privilege management
+E-Health Records,Information Disclosure,70,ISO 27001 A.13,Encrypt data and control information flows
+IoT Production Sensors,Denial of Service,33,ISO 27001 A.14,Availability controls & monitoring
+IoT Production Sensors,Tampering,44,ISO 27001 A.12.1,Implement change management and integrity checks
+IoT Production Sensors,Repudiation,22,ISO 27001 A.10,Logging and non-repudiation mechanisms
+Document Management System,Elevation of Privilege,48,ISO 27001 A.9.4,Least privilege & privilege management
+Document Management System,Tampering,48,ISO 27001 A.12.1,Implement change management and integrity checks
+Document Management System,Information Disclosure,60,ISO 27001 A.13,Encrypt data and control information flows
+Digital Service Portal,Information Disclosure,60,ISO 27001 A.13,Encrypt data and control information flows

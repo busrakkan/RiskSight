@@ -1,20 +1,19 @@
 Asset,Threat,Impact,Feasibility,Risk
-Customer Database,Tampering,11,4,44
-Customer Database,Repudiation,11,2,22
-Customer Database,Information Disclosure,11,5,55
-ERP System,Tampering,8,4,32
-ERP System,Elevation of Privilege,8,4,32
-Internal Network,Information Disclosure,11,5,55
-Email Server,Information Disclosure,11,5,55
-Email Server,Elevation of Privilege,11,4,44
-Email Server,Denial of Service,11,3,33
-HR Records,Elevation of Privilege,8,4,32
-HR Records,Information Disclosure,8,5,40
-HR Records,Spoofing,8,3,24
-Payment Gateway,Information Disclosure,11,5,55
-Payment Gateway,Elevation of Privilege,11,4,44
-IoT Sensor Network,Repudiation,7,2,14
-IoT Sensor Network,Elevation of Privilege,7,4,28
-Document Management System,Information Disclosure,11,5,55
-Document Management System,Tampering,11,4,44
-Document Management System,Spoofing,11,3,33
+Citizen Database,Spoofing,14,3,42
+Citizen Database,Elevation of Privilege,14,4,56
+Citizen Database,Repudiation,14,2,28
+ERP System,Tampering,13,4,52
+ERP System,Elevation of Privilege,13,4,52
+ERP System,Denial of Service,13,3,39
+Internal Network,Denial of Service,13,3,39
+Internal Network,Spoofing,13,3,39
+Online Payment Portal,Tampering,14,4,56
+Online Payment Portal,Elevation of Privilege,14,4,56
+E-Health Records,Information Disclosure,14,5,70
+IoT Production Sensors,Denial of Service,11,3,33
+IoT Production Sensors,Tampering,11,4,44
+IoT Production Sensors,Repudiation,11,2,22
+Document Management System,Elevation of Privilege,12,4,48
+Document Management System,Tampering,12,4,48
+Document Management System,Information Disclosure,12,5,60
+Digital Service Portal,Information Disclosure,12,5,60
