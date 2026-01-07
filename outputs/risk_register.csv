@@ -1,0 +1,21 @@
+Risk_ID,Priority,Asset,Threat,Impact,Likelihood,Risk,Risk_Level,ISO_Control,Description,Risk_Owner,Risk_Status
+RISK-001,1,Digital Service Portal,Elevation of Privilege,4.0,20,80.0,Critical,ISO 27001 A.9.4,Least privilege & privilege management,IT Security,Open
+RISK-002,2,Digital Service Portal,Tampering,4.0,20,80.0,Critical,ISO 27001 A.12.1,Implement change management and integrity checks,IT Security,Open
+RISK-003,3,Citizen Database,Information Disclosure,4.7,15,70.5,Critical,ISO 27001 A.13,Encrypt data and control information flows,IT Security,Open
+RISK-004,4,Online Payment Portal,Spoofing,4.7,15,70.5,Critical,ISO 27001 A.9,Strong authentication & access control,IT Security,Open
+RISK-005,5,Digital Service Portal,Spoofing,4.0,15,60.0,Critical,ISO 27001 A.9,Strong authentication & access control,IT Security,Open
+RISK-006,6,IoT Production Sensors,Tampering,3.6,16,57.6,High,ISO 27001 A.12.1,Implement change management and integrity checks,IT Security,Open
+RISK-007,7,E-Health Records,Tampering,4.7,12,56.4,High,ISO 27001 A.12.1,Implement change management and integrity checks,IT Security,Open
+RISK-008,8,Document Management System,Tampering,4.0,12,48.0,High,ISO 27001 A.12.1,Implement change management and integrity checks,IT Security,Open
+RISK-009,9,Document Management System,Elevation of Privilege,4.0,12,48.0,High,ISO 27001 A.9.4,Least privilege & privilege management,IT Security,Open
+RISK-010,10,Online Payment Portal,Repudiation,4.7,10,47.0,High,ISO 27001 A.10,Logging and non-repudiation mechanisms,IT Security,Open
+RISK-011,11,IoT Production Sensors,Spoofing,3.6,12,43.2,High,ISO 27001 A.9,Strong authentication & access control,IT Security,Open
+RISK-012,12,Citizen Database,Denial of Service,4.7,9,42.3,High,ISO 27001 A.14,Availability controls & monitoring,IT Security,Open
+RISK-013,13,Document Management System,Denial of Service,4.0,9,36.0,Medium,ISO 27001 A.14,Availability controls & monitoring,IT Security,Open
+RISK-014,14,Internal Network,Elevation of Privilege,4.3,8,34.4,Medium,ISO 27001 A.9.4,Least privilege & privilege management,IT Security,Open
+RISK-015,15,IoT Production Sensors,Repudiation,3.6,8,28.8,Medium,ISO 27001 A.10,Logging and non-repudiation mechanisms,IT Security,Open
+RISK-016,16,E-Health Records,Repudiation,4.7,6,28.2,Medium,ISO 27001 A.10,Logging and non-repudiation mechanisms,IT Security,Open
+RISK-017,17,Internal Network,Denial of Service,4.3,6,25.8,Medium,ISO 27001 A.14,Availability controls & monitoring,IT Security,Open
+RISK-018,18,ERP System,Spoofing,4.3,6,25.8,Medium,ISO 27001 A.9,Strong authentication & access control,IT Security,Open
+RISK-019,19,ERP System,Repudiation,4.3,4,17.2,Low,ISO 27001 A.10,Logging and non-repudiation mechanisms,IT Security,Open
+RISK-020,20,Internal Network,Repudiation,4.3,4,17.2,Low,ISO 27001 A.10,Logging and non-repudiation mechanisms,IT Security,Open

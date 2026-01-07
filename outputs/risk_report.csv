@@ -1,13 +1,21 @@
 Asset,Threat,Impact,Exposure,Feasibility,Likelihood,Risk,Risk_Level,Priority
-Digital Service Portal,Information Disclosure,4.0,5,5,25,100.0,Critical,1
-Online Payment Portal,Tampering,4.7,5,4,20,94.0,Critical,2
-Digital Service Portal,Spoofing,4.0,5,3,15,60.0,Critical,3
-Document Management System,Information Disclosure,4.0,3,5,15,60.0,Critical,4
-IoT Production Sensors,Tampering,3.6,4,4,16,57.6,High,5
-Citizen Database,Tampering,4.7,3,4,12,56.4,High,6
-Document Management System,Elevation of Privilege,4.0,3,4,12,48.0,High,7
-E-Health Records,Spoofing,4.7,3,3,9,42.3,High,8
-Document Management System,Spoofing,4.0,3,3,9,36.0,Medium,9
-ERP System,Tampering,4.3,2,4,8,34.4,Medium,10
-Internal Network,Denial of Service,4.3,2,3,6,25.8,Medium,11
-ERP System,Repudiation,4.3,2,2,4,17.2,Low,12
+Digital Service Portal,Elevation of Privilege,4.0,5,4,20,80.0,Critical,1
+Digital Service Portal,Tampering,4.0,5,4,20,80.0,Critical,2
+Citizen Database,Information Disclosure,4.7,3,5,15,70.5,Critical,3
+Online Payment Portal,Spoofing,4.7,5,3,15,70.5,Critical,4
+Digital Service Portal,Spoofing,4.0,5,3,15,60.0,Critical,5
+IoT Production Sensors,Tampering,3.6,4,4,16,57.6,High,6
+E-Health Records,Tampering,4.7,3,4,12,56.4,High,7
+Document Management System,Tampering,4.0,3,4,12,48.0,High,8
+Document Management System,Elevation of Privilege,4.0,3,4,12,48.0,High,9
+Online Payment Portal,Repudiation,4.7,5,2,10,47.0,High,10
+IoT Production Sensors,Spoofing,3.6,4,3,12,43.2,High,11
+Citizen Database,Denial of Service,4.7,3,3,9,42.3,High,12
+Document Management System,Denial of Service,4.0,3,3,9,36.0,Medium,13
+Internal Network,Elevation of Privilege,4.3,2,4,8,34.4,Medium,14
+IoT Production Sensors,Repudiation,3.6,4,2,8,28.8,Medium,15
+E-Health Records,Repudiation,4.7,3,2,6,28.2,Medium,16
+Internal Network,Denial of Service,4.3,2,3,6,25.8,Medium,17
+ERP System,Spoofing,4.3,2,3,6,25.8,Medium,18
+ERP System,Repudiation,4.3,2,2,4,17.2,Low,19
+Internal Network,Repudiation,4.3,2,2,4,17.2,Low,20
