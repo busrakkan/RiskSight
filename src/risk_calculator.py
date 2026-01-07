@@ -18,10 +18,27 @@ def calculate_impact(asset_row):
     )
     return round(impact, 2)
 
+
+def classify_risk(risk_score):
+    """
+    Classify risk score into qualitative risk levels.
+    """
+    if risk_score < 20:
+        return "Low"
+    elif risk_score < 40:
+        return "Medium"
+    elif risk_score < 60:
+        return "High"
+    else:
+        return "Critical"
+
+
 def calculate_risk(df_assets, df_threats, df_capec):
     """
     Calculate risk using:
-    Impact × (Feasibility × Exposure)
+    Risk = Impact × (Feasibility × Exposure)
+
+    Returns a prioritized risk table with qualitative risk levels.
     """
     risk_records = []
 
@@ -29,18 +46,34 @@ def calculate_risk(df_assets, df_threats, df_capec):
         asset = df_assets[df_assets["Asset"] == row["Asset"]].iloc[0]
         capec = df_capec[df_capec["Threat"] == row["Threat"]].iloc[0]
 
+        # Impact (weighted CIA)
         impact = calculate_impact(asset)
-        likelihood = capec["Feasibility"] * asset["Exposure"]
-        risk = impact * likelihood
+
+        # Likelihood
+        exposure = asset["Exposure"]
+        feasibility = capec["Feasibility"]
+        likelihood = feasibility * exposure
+
+        # Risk
+        risk = round(impact * likelihood, 2)
 
         risk_records.append({
             "Asset": row["Asset"],
             "Threat": row["Threat"],
             "Impact": impact,
-            "Exposure": asset["Exposure"],
-            "Feasibility": capec["Feasibility"],
+            "Exposure": exposure,
+            "Feasibility": feasibility,
             "Likelihood": likelihood,
-            "Risk": round(risk, 2)
+            "Risk": risk
         })
 
-    return pd.DataFrame(risk_records)
+    df_risk = pd.DataFrame(risk_records)
+
+    # Risk classification
+    df_risk["Risk_Level"] = df_risk["Risk"].apply(classify_risk)
+
+    # Prioritization
+    df_risk = df_risk.sort_values(by="Risk", ascending=False).reset_index(drop=True)
+    df_risk["Priority"] = df_risk.index + 1
+
+    return df_risk
