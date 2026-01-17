@@ -1,4 +1,4 @@
-# RiskSight – Model-Based IT Security Risk Analyzer
+# RiskSight: Model-Based IT Security Risk Analyzer
 
 **RiskSight** is a **Python-based risk analysis tool** designed to help organizations identify, quantify, and mitigate cybersecurity risks in a **structured, model-driven way**. The project is inspired by **model-based security risk management frameworks** and follows best practices from standards like **STRIDE, CAPEC, and ISO/IEC controls**, making it ideal for IT governance, advisory, and digital transformation contexts.
 
