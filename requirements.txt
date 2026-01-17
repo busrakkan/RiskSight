@@ -1,12 +1,5 @@
-# Core data processing
 pandas>=2.0
-
-# Visualizations
 matplotlib>=3.7
 seaborn>=0.12
-
-# Web-based front-end UI
 streamlit>=1.25
-
-# for nicer tables in Streamlit
 openpyxl>=3.1   
