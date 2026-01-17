@@ -1,4 +1,3 @@
-# src/assets.py
 import pandas as pd
 
 def load_assets(file_path="data/assets.csv"):
