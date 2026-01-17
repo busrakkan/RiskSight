@@ -1,4 +1,3 @@
-# src/risk_register.py
 import pandas as pd
 
 def generate_risk_register(df_risk, df_controls):
@@ -8,21 +7,18 @@ def generate_risk_register(df_risk, df_controls):
     - ISO control recommendations
     """
 
-    # Merge risk table with ISO controls
     df_register = df_risk.merge(
         df_controls,
         on="Threat",
         how="left"
     )
 
-    # Generate Risk IDs
     df_register.insert(
         0,
         "Risk_ID",
         ["RISK-" + str(i+1).zfill(3) for i in range(len(df_register))]
     )
 
-    # Add consulting fields
     df_register["Risk_Owner"] = "IT Security"
     df_register["Risk_Status"] = "Open"
 
