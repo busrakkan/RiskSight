@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 import seaborn as sns
-import streamlit as st  # needed to render plots in Streamlit
+import streamlit as st 
 
 def plot_risk_matrix(df_risk):
     fig, ax = plt.subplots(figsize=(8, 6))
