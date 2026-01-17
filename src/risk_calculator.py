@@ -1,4 +1,3 @@
-# src/risk_calculator.py
 import pandas as pd
 
 CIA_WEIGHTS = {
@@ -46,15 +45,12 @@ def calculate_risk(df_assets, df_threats, df_capec):
         asset = df_assets[df_assets["Asset"] == row["Asset"]].iloc[0]
         capec = df_capec[df_capec["Threat"] == row["Threat"]].iloc[0]
 
-        # Impact (weighted CIA)
         impact = calculate_impact(asset)
 
-        # Likelihood
         exposure = asset["Exposure"]
         feasibility = capec["Feasibility"]
         likelihood = feasibility * exposure
 
-        # Risk
         risk = round(impact * likelihood, 2)
 
         risk_records.append({
@@ -69,10 +65,8 @@ def calculate_risk(df_assets, df_threats, df_capec):
 
     df_risk = pd.DataFrame(risk_records)
 
-    # Risk classification
     df_risk["Risk_Level"] = df_risk["Risk"].apply(classify_risk)
 
-    # Prioritization
     df_risk = df_risk.sort_values(by="Risk", ascending=False).reset_index(drop=True)
     df_risk["Priority"] = df_risk.index + 1
 
