@@ -8,5 +8,5 @@ seaborn>=0.12
 # Web-based front-end UI
 streamlit>=1.25
 
-# Optional but recommended for nicer tables in Streamlit
-openpyxl>=3.1   # If you want to export Excel files in the future
+# for nicer tables in Streamlit
+openpyxl>=3.1   
